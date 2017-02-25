@@ -17,22 +17,34 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
   <title>Home</title>
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=443350757"/>
-  <link rel="stylesheet" type="text/css" href="css/index.css?crc=429496849" id="pagesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/index.css?crc=499718893" id="pagesheet"/>
    </head>
  <body>
 
-  <div class="clearfix borderbox" id="page"><!-- column -->
-   <div class="browser_width" id="u138-bw">
-    <div class="museBGSize pinned-colelem" id="u138"><!-- simple frame --></div>
+  <div class="clearfix borderbox" id="page"><!-- group -->
+   <div class="browser_width grpelem" id="u138-bw">
+    <div class="museBGSize" id="u138"><!-- group -->
+     <div class="clearfix" id="u138_align_to_page">
+      <div class="clearfix grpelem" id="u108-4"><!-- content -->
+       <p>I'm here for you, big dog, but right now, I got to finish this website for you, girl.</p>
+      </div>
+      <div class="clearfix grpelem" id="pu152-4"><!-- column -->
+       <img class="colelem" id="u152-4" alt="Oscar C Motsinger" src="images/u152-4.png?crc=72790340" data-image-width="519"/><!-- rasterized frame -->
+       <div class="clearfix colelem" id="u135-4"><!-- content -->
+        <p>I'm just a ///////kid///////</p>
+       </div>
+      </div>
+     </div>
+    </div>
    </div>
-   <img class="colelem" id="u152-4" alt="Oscar C Motsinger" src="images/u152-4.png?crc=521003783" data-image-width="508"/><!-- rasterized frame -->
-   <div class="clearfix colelem" id="u135-4"><!-- content -->
-    <p>I'm just a ///////kid///////</p>
+   <div class="browser_width grpelem" id="u258-bw">
+    <div class="museBGSize" id="u258"><!-- group -->
+     <div class="clearfix" id="u258_align_to_page">
+      <img class="grpelem" id="u275-4" alt="girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls being girls." src="images/u275-4.png?crc=3848429457" data-image-width="1960"/><!-- rasterized frame -->
+     </div>
+    </div>
    </div>
-   <div class="clearfix colelem" id="u108-4"><!-- content -->
-    <p>I'm here for you, big dog, but right now, I got to finish this website for you, girl.</p>
-   </div>
-   <div class="verticalspacer" data-offset-top="460" data-content-above-spacer="460" data-content-below-spacer="62"></div>
+   <div class="verticalspacer" data-offset-top="2839" data-content-above-spacer="2839" data-content-below-spacer="61"></div>
   </div>
   <!-- Other scripts -->
   <script type="text/javascript">
@@ -44,6 +56,8 @@ var muse_init=function(){require.config({baseUrl:""});require(["jquery","museuti
 window.Muse.assets.check($);/* body */
 Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
 Muse.Utils.prepHyperlinks(true);/* body */
+Muse.Utils.resizeHeight('.browser_width');/* resize height */
+Muse.Utils.requestAnimationFrame(function() { $('body').addClass('initialized'); });/* mark body as initialized */
 Muse.Utils.fullPage('#page');/* 100% height page */
 Muse.Utils.showWidgetsWhenReady();/* body */
 Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
